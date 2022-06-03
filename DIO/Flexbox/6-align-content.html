@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align-Content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 400px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .item{
+            background-color: orangered;
+            color: white;
+            padding: 0 10px;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stretch(Padrão)</h1>
+    <section class="container">
+        <div class="item">Lorem ipsum, dolor sit amet 11</div>
+        <div class="item"> Lorem ipsum, dolor sit amen 22</div>
+        <div class="item"> Lorem, ipsum dolor sitkh ame33</div>
+        <div class="item">Lorem ipsum, dolor sit amet44</div>
+        <div class="item">Lorem ipsum, dolor sit amet55</div>
+        <div class="item">Lorem ipsum, dolor sit amet66</div>
+        <div class="item">Lorem ipsum, dolor sit amet77</div>
+    </section>
+    <h1>Center (centralizado na vertical e alinhado a esquerda)</h1>
+    <section class="container center">
+        <div class="item">Lorem ipsum, dolor sit amet 11</div>
+        <div class="item"> Lorem ipsum, dolor sit amen 22</div>
+        <div class="item"> Lorem, ipsum dolor sit ame orem, ipsum dolor sit ameorem, ipsum dolor sit ame33</div>
+        <div class="item">Lorem ipsum, dolor sit amet44</div>
+        <div class="item">Lorem ipsum, dolor sit amet55</div>
+        <div class="item">Lorem ipsum, dolor sit amet66</div>
+        <div class="item">Lorem ipsum, dolor sit amet77</div>
+    </section>
+
+    <h1>Flex-Start</h1>
+    <section class="container flex-start">
+        <div class="item">Lorem ipsum, dolor sit amet 11</div>
+        <div class="item"> Lorem ipsum, dolor sit amen 22</div>
+        <div class="item"> Lorem, ipsum dolor sit ame orem, ipsum dolor sit ameorem, ipsum dolor sit ame33</div>
+        <div class="item">Lorem ipsum, dolor sit amet44</div>
+        <div class="item">Lorem ipsum, dolor sit amet55</div>
+        <div class="item">Lorem ipsum, dolor sit amet66</div>
+        <div class="item">Lorem ipsum, dolor sit amet77</div>
+    </section>
+</body>
+</html>

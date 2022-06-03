@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos- Flex Direction</title>
+    <style>
+        .flex-container{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+
+        }
+        .flex-item{
+            background-color: rgb(0, 0, 0);
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            text-align: center;
+            margin: 5px;    
+        }
+        .row{
+            background-color: orange;
+        }
+        .row-reverse {
+            background-color: blue;
+            flex-direction: row-reverse;
+        }
+        .column{
+            float: left;
+            flex-direction: column;
+            background-color: green;
+            
+        }
+        .column-reverse{
+            float: right;
+            flex-direction: column-reverse;
+            background-color: yellow;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="flex-container row"> <!--row texto padrão esquerda para direita-->
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container row-reverse"><!--row reverse texto sentido oposto direita para a esquerda-->
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container column-reverse "><!--column o texto seguirá de cima para baixo-->
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+
+    <ul class="flex-container column "><!--column o texto seguirá de baixo para cima-->
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align Self</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 600px;
+            border: 5px solid black;
+            height: 300px;
+        }
+        .item{
+            background-color: deeppink;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+            
+        }
+        .flex-start{
+            align-self: flex-start;
+        }
+        .flex-end{
+            align-self: flex-end;
+        }
+        .center{
+            align-self: center;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .d-column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body><h1>Align Self</h1>
+    <h2>Linhas</h2>
+    <section class="flex-container">
+        <div class="item flex-start">Start</div>
+        <div class="item center">Center</div>
+        <div class="item flex-end">End</div>
+        <div class="item stretch">Preenchimento da tela proporcional ao conteúdo 
+            <br>Preenchimento da tela proporcional ao conteúdo <br>Preenchimento da tela proporcional ao conteúdo </div>
+        <div class="item baseline">Linha base da tipografia</div>
+        <div class="item auto">Auto: padrão</div>
+    </section>
+    <h2>Colunas</h2>
+    <section class="flex-container d-column">
+        <div class="item flex-start">Start</div>
+        <div class="item center">Center</div>
+        <div class="item flex-end">End</div>
+        <div class="item stretch">Preenchimento da tela proporcional ao conteúdo 
+            <br>Preenchimento da tela proporcional ao conteúdo Preenchimento da tela proporcional ao conteúdo </div>
+        <div class="item baseline">Linha base da tipografia</div>
+        <div class="item auto">Auto: padrão</div>
+    </section>
+</body>
+</html>

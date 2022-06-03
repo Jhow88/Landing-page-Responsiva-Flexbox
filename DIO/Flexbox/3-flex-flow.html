@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flex- Flow</title>
+<style>
+    .flex-container{
+        display: flex;
+        border: 2px solid black;
+        max-width: 500px;
+        
+    }
+    .item{
+        background-color: purple;
+        color: white;
+        text-align: center;
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+    }
+    .default{
+        flex-direction: row nowrap;
+    }
+    .wrap{
+        flex-flow: row wrap;
+    }
+    .wrapreverse{
+        flex-flow: row wrap-reverse;
+    }
+    .rreverse-nowrap{
+        flex-flow: row-reverse nowrap;
+    }
+    .rreverse-wrap{
+        flex-flow: row-reverse wrap;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Default: Row No Wrap</h1>
+    <div class="flex-container default">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+    </div>
+    <h1>Wrap (com quebra de linha - itens add abaixo)</h1>
+    <div class="flex-container wrap">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+    </div>
+
+    <h1>Wrap Reverse (com quebra de linha- itens add acima)</h1>
+    <div class="flex-container wrapreverse">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+    </div>
+
+    <h1>Row-Reverse NoWrap(Texto oposto- sem quebra de linha )</h1>
+    <div class="flex-container rreverse-nowrap">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+    </div>
+    <h1>Row-Reverse Wrap(Texto oposto- com quebra de linha )</h1>
+    <div class="flex-container rreverse-wrap">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+    </div>
+</body>
+</html>
